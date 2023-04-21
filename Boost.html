@@ -5,25 +5,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Compra Boost - Rangos</title>
   <style>
+    nav h1:nth-child(2) {
+      color: lightblue;
+      margin-top: -30px;
+      font-size: 2rem;
+      margin-left: -150px;
+      font-family:;
+      text-shadow: 1px 1px 0px #000000;
+
+    }
+    nav img {
+      height: 150px; /* Cambia aquí la altura del logo */
+      margin-left: -30px;
+      margin-top: -50px;
+
+    }
+
     .boton-continuar {
-      background-color: #4CAF50; /* color verde */
+      background-color: cadetblue;
       border: none;
-      color: white;
+      color: lightblue;
+
       padding: 10px 20px;
       text-align: center;
       text-decoration: none;
       display: inline-block;
-      font-size: 16px;
+      font-size: 20px;
       margin: 4px 2px;
       cursor: pointer;
       border-radius: 5px;
+      font-family: "Friz Quadrata";
     }
 
     body {
-      background-color: #f2f2f2;
+      background-image: url('Imagenes/ashe.jpg');
+      background-size: cover;
+      background-position: center 1px;
+
     }
     nav {
-      background-color: #333;
+      background-color: none;
       color: white;
       display: flex;
       justify-content: space-between;
@@ -35,17 +56,19 @@
       text-decoration: none;
       margin-left: 1rem;
       font-weight: bold;
+      margin-top: -50px;
     }
     nav img {
       height: 150px; /* Cambia aquí la altura del logo */
       margin-right: 1rem;
     }
     section {
+      border none;
       padding: 2rem;
       margin: 2rem;
-      background-color: white;
+      background-color: none;
       border-radius: 5px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+
       text-align: center;
     }
     button {
@@ -79,6 +102,96 @@
       margin: 1rem;
       width: auto;
     }
+
+    #compra {
+      font-family: "Friz Quadrata Std";
+      background-image: url("Imagenes/buscarpartida.png");
+      background-size: 33%;
+      background-repeat: no-repeat;
+      background-position: center;
+      color: white; /* Para asegurar que el texto sea visible */
+      padding: 50px; /* Ajusta este valor para cambiar el espacio entre el texto y el borde del elemento */
+    }
+    .panels {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      border: none;
+
+      height: 70vh;
+      box-shadow: none;
+    }
+
+    .panel {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(49, 112, 137, 0.5);
+      padding: 20px;
+      border: none;
+      box-shadow: 0px 0px 10px #aaa;
+      margin: 10px;
+      min-width: 250px;
+      max-width: 350px;
+      height: 400px;
+    }
+
+    .panel img {
+      max-width: 100%;
+
+    }
+    #region{
+      transform: scale(3);
+      height: 50px; /* ajusta la altura del panel */
+      object-fit: contain; /* ajusta la imagen al alto del contenedor */
+      object-position: center; /* ajusta la imagen al centro del contenedor */
+
+    }
+    #alto{
+      transform: scale(1.5);
+      height: 50px; /* ajusta la altura del panel */
+      object-fit: contain; /* ajusta la imagen al alto del contenedor */
+      object-position: center; /* ajusta la imagen al centro del contenedor */
+
+    }
+    #bajo{
+      transform: scale(1.5);
+      height: 50px; /* ajusta la altura del panel */
+      object-fit: contain; /* ajusta la imagen al alto del contenedor */
+      object-position: center; /* ajusta la imagen al centro del contenedor */
+
+    }
+
+    .panel h2 {
+      margin-top: 50px;
+      font-size: 30px;
+      text-align: center;
+      color: black;
+
+    }
+
+    .panel p {
+      font-size: 18px;
+      text-align: center;
+      color: #666;
+      margin-top: 10px;
+    }
+
+    .panel button {
+      background-color: cadetblue;
+      color: lightblue;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 18px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+    .panel button:hover {
+      background-color: cadetblue;
+    }
   </style>
 </head>
 <body>
@@ -95,27 +208,53 @@
   <a href="ingresar.html">Ingresar</a>
 </nav>
 <section>
-  <h1>Compra Boost - Rangos</h1>
+  <h1 id="compra">COMPRA BOOST - RANGOS</h1>
   <form>
-    <label for="rango-actual">Rango actual:</label>
-    <select id="rango-actual" name="rango-actual">
-      <option value="bronce">Bronce</option>
-      <option value="plata">Plata</option>
-      <option value="oro">Oro</option>
-      <option value="platino">Platino</option>
-      <option value="diamante">Diamante</option>
-      <option value="maestro">Maestro</option>
-      <option value="gran-maestro">Gran Maestro</option>
-    </select>
-    <label for="rango-deseado">Rango deseado:</label>
-    <select id="rango-deseado" name="rango-deseado">
-      <option value="plata">Plata</option>
-      <option value="oro">Oro</option>
-      <option value="platino">Platino</option>
-      <option value="diamante">Diamante</option>
-      <option value="maestro">Maestro</option>
-      <option value="gran-maestro">Gran Maestro</option>
-    </select>
+    <section class="panels">
+      <div class="panel">
+        <img src="Imagenes/bajito.png" id="bajo">
+        <h2>Soy</h2>
+        <h3>Selecciona tu rango actual</h3>
+        <select>
+        <option value="r0">Hierro</option>
+        <option value="r1">Bronce</option>
+        <option value="r2">Plata</option>
+        <option value="r3">Oro</option>
+        <option value="r4">Platino</option>
+        <option value="r5">Diamante</option>
+        </select>
+        <button>Ver más</button>
+      </div>
+      <div class="panel">
+        <img src=Imagenes/alto.png id="alto">
+        <h2>!Quiero ser!</h2>
+        <h3>Selecciona tu rango deseado</h3>
+        <select>
+          <option value="rd0">Plata</option>
+          <option value="rd1">Oro</option>
+          <option value="rd2">Platino</option>
+          <option value="rd3">Diamante</option>
+          <option value="rd4">Master</option>
+          <option value="rd5">GrandMaster</option>
+          <option value="rd6">Challenger</option>
+        </select>
+        <button>Ver más</button>
+      </div>
+      <div class="panel">
+        <img src=Imagenes/descarga.png id="region">
+        <h2>Region</h2>
+        <h3>Seleciona tu region</h3>
+        <select>
+          <option value="op1">Las</option>
+          <option value="op2">Lan</option>
+          <option value="op3">Br</option>
+          <option value="op4">Euw</option>
+          <option value="op5">Eune</option>
+          <option value="op6">Na</option>
+        </select>
+        <button>Ver más</button>
+      </div>
+    </section>
 
     <a href="Region.html" class="boton-continuar">Continuar</a>
   </form>

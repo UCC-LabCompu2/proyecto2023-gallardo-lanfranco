@@ -1,9 +1,4 @@
-#Proyecto_HTML_CSS
-Este es el README del primer proyecto de la materia
+# ejercicios2023
+Ejercicios de HTML, CSS y JS para Laboratorio de Computación II
 
-## Autores
-* Agustin **Gallardo**
-* Lautaro **Lanfranco**
-
-## Descripcion del proyecto
 
