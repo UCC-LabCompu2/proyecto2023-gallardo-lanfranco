@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compra Boost - Rangos</title>
+  <style>
+    nav h1:nth-child(2) {
+      color: lightblue;
+      margin-top: -30px;
+      font-size: 2rem;
+      margin-left: -150px;
+      font-family:;
+      text-shadow: 1px 1px 0px #000000;
+
+    }
+    nav img {
+      height: 150px; /* Logo pagina */
+      margin-left: -30px;
+      margin-top: -50px;
+
+    }
+
+    .boton-continuar {
+      background-color: cadetblue; /* Boton inferior */
+      border: none;
+      color: lightblue;
+
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 5px;
+      font-family: "Friz Quadrata";
+    }
+
+    body {
+      background-image: url('Imagenes/ashe.jpg');
+      background-size: cover;
+      background-position: center 1px;
+
+    }
+    nav {
+      background-color: none;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1rem;
+      font-weight: bold;
+      margin-top: -50px;
+    }
+    section {
+      border none;
+      padding: 1rem;
+      margin: 2rem;
+      background-color: none;
+      border-radius: 5px;
+      text-align: center;
+    }
+    #pago { /* texto superior de panel */
+      font-family: "Friz Quadrata Std";
+      font-size:2.3rem;
+      background-image: url("Imagenes/buscarpartida.png");
+      background-size: 33%;
+      background-repeat: no-repeat;
+      background-position: center;
+      color: white;
+      padding: 50px;
+
+    }
+    .panels {
+      display: flex; /* contenedor */
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      height: 100vh;
+      width: 150vh;
+      box-shadow: none;
+
+    }
+
+    .panel img {
+      max-width: 100%;
+
+    }
+    .panel-derecho {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(49, 112, 137, 0.5);
+      padding: 20px;
+      border: none;
+      box-shadow: 0px 0px 10px #aaa;
+      margin-left: 50px;
+      height: 80vh;
+      width: 45%;
+    }
+    .panel-izquierdo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(49, 112, 137, 0.5);
+      padding: 20px;
+      margin-left: 130px;
+      border: none;
+      box-shadow: 0px 0px 10px #aaa;
+      margin-right: 50px;
+      height: 80vh;
+      width: 55%;
+    }
+    .fila1 {
+      display: flex;
+      justify-content: space-between;
+    }
+    #contacto {
+      font-family: "Gentium Basic";
+      font-size:2rem ;
+    }
+    #Nombreinv {
+      margin-right: 10px;
+    }
+    .fila2 {
+      display: flex;
+      justify-content: space-between;
+    }
+    #expira {
+      margin-right: 10px;
+    }
+    .input-container {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1rem;
+    }
+    .input-container {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1rem;
+    }
+
+    .input-container label {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .input-container input {
+      padding: 0.5rem;
+      font-size: 1rem;
+      border: 2px solid #ccc;
+      border-radius: 0.25rem;
+    }
+    .input-container textarea {
+      padding: 0.5rem;
+      font-size: 1rem;
+      border: 2px solid #ccc;
+      border-radius: 0.25rem;
+    }
+
+    .input-container input:focus {
+      border-color: dodgerblue;
+      outline: none;
+    }
+
+  </style>
+</head>
+<body>
+<nav>
+  <h1>
+    <img src="Imagenes/logo.png" alt="FastElo Logo">
+  </h1>
+  <h1> FastElo
+  </h1>
+  <a href="index.html">Inicio</a>
+  <a href="nosotros.html">Nosotros</a>
+  <a href="contacto.html">Contacto</a>
+  <a href="registro.html">Registro</a>
+  <a href="ingresar.html">Ingresar</a>
+</nav>
+<section>
+  <h1 id="pago">Metodo de pago</h1>
+
+    <section class="panels">
+      <div class="panel-izquierdo">
+        <h1 id="contacto"> Datos de contacto</h1>
+        <form>
+          <div class="panel">
+            <div class="fila1">
+              <div class="input-container">
+                <label for="Nombreinv">Nombre de invocador:</label>
+                <input type="text" id="Nombreinv" name="Nombreinv" required>
+              </div>
+              <div class="input-container">
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario" name="usuario" required>
+              </div>
+            </div>
+            <div class="fila2">
+              <div class="input-container">
+                <label for="contraseña">Contraseña:</label>
+                <input type="text" id="contraseña" name="contraseña" required>
+              </div>
+              <div class="input-container">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+            </div>
+            <div class="input-container">
+              <label for="mensaje">Mensaje (opcional)</label>
+              <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+            </div>
+          </div>
+          </div>
+        </form>
+      </div>
+      <div class="panel-derecho">
+        <h1>Metodo de pago</h1>
+        <form>
+          <div class="input-container">
+            <label for="nombre">Nombre en la tarjeta</label>
+            <input type="text" id="nombre" name="nombre" required>
+          </div>
+          <div class="input-container">
+            <label for="tarjeta">Número de tarjeta</label>
+            <input type="text" id="tarjeta" name="tarjeta" required>
+          </div>
+          <div class="fila2">
+            <div class="input-container">
+              <label for="expira">Fecha de expiración</label>
+              <input type="text" id="expira" name="expira" required>
+            </div>
+            <div class="input-container">
+              <label for="cvv">CVV</label>
+              <input type="text" id="cvv" name="cvv" required>
+            </div>
+          </div>
+        </form>
+        <a href="precios.html" class="boton-continuar">Continuar</a>
+      </div>
+    </section>
+</section>
+
+</body>
+</html>
