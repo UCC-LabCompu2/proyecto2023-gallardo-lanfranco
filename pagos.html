@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Compra Boost - Rangos</title>
   <style>
+    a img {
+      cursor: pointer;
+    }
+
     nav h1:nth-child(2) {
       color: lightblue;
       margin-top: -30px;
@@ -15,14 +19,14 @@
 
     }
     nav img {
-      height: 150px; /* Logo pagina */
+      height: 150px;
       margin-left: -30px;
       margin-top: -50px;
 
     }
 
     .boton-continuar {
-      background-color: cadetblue; /* Boton inferior */
+      background-color: cadetblue;
       border: none;
       color: lightblue;
 
@@ -66,7 +70,7 @@
       border-radius: 5px;
       text-align: center;
     }
-    #pago { /* texto superior de panel */
+    #pago {
       font-family: "Friz Quadrata Std";
       font-size:2.3rem;
       background-image: url("Imagenes/buscarpartida.png");
@@ -78,7 +82,7 @@
 
     }
     .panels {
-      display: flex; /* contenedor */
+      display: flex;
       flex-direction: row;
       justify-content: center;
       align-items: center;
@@ -177,13 +181,13 @@
 <body>
 <nav>
   <h1>
-    <img src="Imagenes/logo.png" alt="FastElo Logo">
+    <a href="index.html"><img src="Imagenes/logo.png" alt="FastElo Logo"></a>
   </h1>
   <h1> FastElo
   </h1>
   <a href="index.html">Inicio</a>
-  <a href="nosotros.html">Nosotros</a>
   <a href="contacto.html">Contacto</a>
+  <a href="nosotros.html">Nosotros</a>
   <a href="registro.html">Registro</a>
   <a href="ingresar.html">Ingresar</a>
 </nav>
