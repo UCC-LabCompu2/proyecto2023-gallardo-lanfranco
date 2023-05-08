@@ -1,0 +1,78 @@
+
+body {
+    background-image: url('Imagenes/600528.png');
+    background-size: cover;
+    background-position: center 0px;
+}
+nav {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+nav a {
+    font-size: large;
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+    font-weight: bold;
+    margin-top: -50px;
+}
+nav img {
+    height: 150px;
+    margin-left: -30px;
+    margin-top: -50px;
+
+}
+nav h1:nth-child(2) {
+    color: goldenrod;
+    margin-top: -30px;
+    font-size: 4rem;
+    margin-left: -150px;
+    font-family:"Friz Quadrata Std";
+    text-shadow: 1px 1px 0px #000000;
+
+}
+section {
+    padding: 2rem;
+    margin: 2rem;
+    background-color: rgba(0, 0, 0, 0.671);
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 0.5px goldenrod;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    text-align: center;
+
+}
+button {
+    padding: 1rem;
+    background-color: goldenrod;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+label {
+    margin: 1rem 0;
+    font-weight: bold;
+}
+input[type=text], input[type=email], input[type=password] {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    font-size: 1rem;
+}
+input[type=checkbox] {
+    margin: 1rem;
+    width: auto;
+}

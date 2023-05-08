@@ -1,0 +1,178 @@
+
+a img {
+    cursor: pointer;
+}
+
+nav h1:nth-child(2) {
+    color: lightblue;
+    margin-top: -30px;
+    font-size: 4rem;
+    margin-left: -150px;
+    font-family: "Friz Quadrata Std";
+    text-shadow: 1px 1px 0px #000000;
+
+}
+nav img {
+    height: 150px;
+    margin-left: -30px;
+    margin-top: -50px;
+
+}
+
+.boton-continuar {
+    background-color: cadetblue;
+    border: none;
+    color: lightblue;
+
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: "Friz Quadrata Std";
+}
+
+body {
+    background-image: url('Imagenes/ashe.jpg');
+    background-size: cover;
+    background-position: center 1px;
+
+}
+nav {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+nav a {
+    font-size: large;
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+    font-weight: bold;
+    margin-top: -50px;
+}
+section {
+    border: none;
+    padding: 1rem;
+    margin: 2rem;
+    border-radius: 5px;
+    text-align: center;
+}
+#pago {
+    font-family: "Friz Quadrata Std";
+    font-size:2.3rem;
+    background-image: url("Imagenes/buscarpartida.png");
+    background-size: 33%;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    padding: 50px;
+
+}
+.panels {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    height: 100vh;
+    width: 150vh;
+    box-shadow: none;
+
+}
+
+.panel img {
+    max-width: 100%;
+
+}
+.panel-derecho {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(49, 112, 137, 0.685);
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    border: none;
+    box-shadow: 0px 0px 10px #aaa;
+    margin-left: 50px;
+    height: 80vh;
+    width: 55%;
+}
+#mpago {
+    font-family: "Gentium Basic";
+    font-size:2rem ;
+}
+.panel-izquierdo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(49, 112, 137, 0.685);
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    margin-left: 130px;
+    border: none;
+    box-shadow: 0px 0px 10px #aaa;
+    margin-right: 50px;
+    height: 80vh;
+    width: 55%;
+}
+.fila1 {
+    display: flex;
+    justify-content: space-between;
+}
+#contacto {
+    font-family: "Gentium Basic";
+    font-size:2rem ;
+}
+#Nombreinv {
+    margin-right: 10px;
+}
+.fila2 {
+    display: flex;
+    justify-content: space-between;
+}
+#expira {
+    margin-right: 10px;
+}
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.input-container label {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.input-container input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 0.25rem;
+}
+.input-container textarea {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 0.25rem;
+}
+
+.input-container input:focus {
+    border-color: dodgerblue;
+    outline: none;
+}
+
+

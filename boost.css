@@ -1,0 +1,183 @@
+
+nav h1:nth-child(2) {
+    color: lightblue;
+    margin-top: -30px;
+    font-size: 4rem;
+    margin-left: -150px;
+    font-family:"Friz Quadrata Std";
+    text-shadow: 1px 1px 0px #000000;
+
+}
+nav img {
+    height: 150px;
+    margin-left: -30px;
+    margin-top: -50px;
+
+}
+
+.boton-continuar {
+    background-color: cadetblue;
+    border: none;
+    color: lightblue;
+
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: "Friz Quadrata";
+}
+
+body {
+    background-image: url('Imagenes/ashe.jpg');
+    background-size: cover;
+    background-position: center 1px;
+
+}
+nav {
+
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+nav a {
+    font-size: large;
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+    font-weight: bold;
+    margin-top: -50px;
+}
+section {
+
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 5px;
+    text-align: center;
+}
+button {
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+label {
+    margin: 1rem 0;
+    font-weight: bold;
+}
+input[type=text], input[type=email], input[type=password] {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    font-size: 1rem;
+}
+input[type=checkbox] {
+    margin: 1rem;
+    width: auto;
+}
+
+#compra {
+    font-family: "Friz Quadrata Std";
+    background-image: url("Imagenes/buscarpartida.png");
+    background-size: 33%;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    padding: 50px;
+}
+.panels {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: none;
+
+    height: 70vh;
+    box-shadow: none;
+}
+
+.panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(49, 112, 137, 0.685);
+    color: rgb(255, 255, 255);
+    padding: 20px;
+
+    box-shadow: 0px 0px 10px #aaa;
+    margin: 10px;
+    min-width: 250px;
+    max-width: 350px;
+    height: 400px;
+}
+
+.panel img {
+    max-width: 100%;
+
+}
+#region{
+    transform: scale(3);
+    height: 50px;
+    object-fit: contain;
+    object-position: center;
+
+}
+#alto{
+    transform: scale(1.5);
+    height: 50px;
+    object-fit: contain;
+    object-position: center;
+
+}
+#bajo{
+    transform: scale(1.5);
+    height: 50px;
+    object-fit: contain;
+    object-position: center;
+
+}
+
+.panel h2 {
+    margin-top: 50px;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+
+}
+
+.panel p {
+    font-size: 18px;
+    text-align: center;
+    color: #666;
+    margin-top: 10px;
+}
+
+.panel button {
+    background-color: cadetblue;
+    color: lightblue;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.panel button:hover {
+    background-color: cadetblue;
+}
