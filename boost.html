@@ -8,78 +8,85 @@
     <title>Compra Boost - Rangos</title>
 </head>
 <body>
-
-<nav>
-    <h1>
-        <a href="index.html"><img src="Imagenes/logo.png" alt="FastElo Logo"></a>
-    </h1>
-    <h1> astElo
-    </h1>
-    <a href="index.html">Inicio</a>
-    <a href="contacto.html">Contacto</a>
-    <a href="nosotros.html">Nosotros</a>
-    <a href="registro.html">Registro</a>
-    <a href="ingresar.html">Ingresar</a>
-</nav>
-
+<header>
+    <nav>
+        <h1>
+            <a href="index.html"><img src="Imagenes/logo.png" alt="FastElo Logo"></a>
+        </h1>
+        <h1> FastElo
+        </h1>
+        <a href="index.html">Inicio</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="registro.html">Registro</a>
+        <a href="ingresar.html">Ingresar</a>
+    </nav>
+</header>
 <section>
     <h1 id="compra">COMPRA BOOST - RANGOS</h1>
-    <form>
-        <section class="panels">
-            <div class="panel">
-                <img src="Imagenes/bajito.png" alt="lowelo" id="bajo">
-                <h2>Soy</h2>
-                <h3>Selecciona tu rango actual</h3>
-                <label for="rango">Selecciona tu rango:</label>
-                <select id="rango" name="rango">
-                    <option value="r0">Hierro</option>
-                    <option value="r1">Bronce</option>
-                    <option value="r2">Plata</option>
-                    <option value="r3">Oro</option>
-                    <option value="r4">Platino</option>
-                    <option value="r5">Diamante</option>
-                </select>
-                <button>Ver más</button>
-            </div>
-            <div class="panel">
-                <img src=Imagenes/alto.png alt="highelo" id="alto">
-                <h2>!Quiero ser!</h2>
-                <h3>Selecciona tu rango deseado</h3>
-                <label for="rank">Selecciona tu rango:</label>
-                <select id="rank" name="rank">
-                    <option value="rd0">Plata</option>
-                    <option value="rd1">Oro</option>
-                    <option value="rd2">Platino</option>
-                    <option value="rd3">Diamante</option>
-                    <option value="rd4">Master</option>
-                    <option value="rd5">GrandMaster</option>
-                    <option value="rd6">Challenger</option>
-                </select>
-                <button>Ver más</button>
-            </div>
-            <div class="panel">
-                <img src=Imagenes/descarga.png alt="region" id="region">
-                <h2>Region</h2>
-                <h3>Seleciona tu region</h3>
-                <label for="regionn">Selecciona tu región:</label>
-                <select id="regionn" name="region">
-                    <option value="op1">Las</option>
-                    <option value="op2">Lan</option>
-                    <option value="op3">Br</option>
-                    <option value="op4">Euw</option>
-                    <option value="op5">Eune</option>
-                    <option value="op6">Na</option>
-                </select>
-                <button>Ver más</button>
-            </div>
-        </section>
 
-        <a href="pagos.html" class="boton-continuar">Continuar</a>
-    </form>
+    <section class="panels">
+        <div class="panel">
+            <img src="Imagenes/bajito.png" alt="lowelo" id="bajo">
+            <h2>Soy</h2>
+            <h3>Selecciona tu rango actual</h3>
+            <label for="rango">Selecciona tu rango:</label>
+            <select id="rango" name="rango" onchange="validar()" >
+                <option value=1 selected>Hierro</option>
+                <option value=2>Bronce</option>
+                <option value=3>Plata</option>
+                <option value=4>Oro</option>
+                <option value=5>Platino</option>
+                <option value=6>Diamante</option>
+            </select>
+        </div>
+        <div class="panel">
+            <img src=Imagenes/alto.png alt="highelo" id="alto">
+            <h2>!Quiero ser!</h2>
+            <h3>Selecciona tu rango deseado</h3>
+            <label for="rank">Selecciona tu rango:</label>
+            <select id="rank" name="rank" onchange="validar()">
+                <option value=3 selected>Plata</option>
+                <option value=4>Oro</option>
+                <option value=5>Platino</option>
+                <option value=6>Diamante</option>
+                <option value=7>Master</option>
+                <option value=8>GrandMaster</option>
+                <option value=9>Challenger</option>
+            </select>
+        </div>
+        <div class="panel">
+            <img src=Imagenes/descarga.png alt="region" id="region">
+            <h2>Region</h2>
+            <h3>Seleciona tu region</h3>
+            <label for="regionn">Selecciona tu región:</label>
+            <select id="regionn" name="region">
+                <option value="LAS" selected>Las</option>
+                <option value="LAN">Lan</option>
+                <option value="BR">Br</option>
+                <option value="EUW">Euw</option>
+                <option value="EUNE">Eune</option>
+                <option value="NA">Na</option>
+            </select>
+        </div>
+
+        <div class="panel">
+            <img src=Imagenes/plata.png style="max-width: 150px;" alt="precio" id="precio-img">
+            <h2>Precio</h2>
+            <label for="precio">Precio:</label>
+            <a id="precio">NO HAS SELECCIONADO NADA</a>
+            <button onclick="pagar()">Pagar</button>
+        </div>
+    </section>
+
+    <button class="boton-continuar" onclick="onClick()">Calcular Precio</button>
+    <div id="canvas-container">
+        <canvas id="my-canvas"></canvas>
+    </div>
 </section>
-<div id="canvas-container">
-    <canvas id="my-canvas"></canvas>
-</div>
+
+<script src="./libs/artist.js"></script>
+<script src="boost.js"></script>
 
 </body>
 </html>
