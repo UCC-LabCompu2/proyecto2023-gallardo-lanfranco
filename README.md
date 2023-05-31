@@ -28,3 +28,4 @@ Encontraremos los siguientes apartados en la pagina:
 - CSS
 - Gencraft (IA para crear el logo)
 - Git
+- Javascript
