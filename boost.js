@@ -106,6 +106,13 @@ let goto = function(url){
 
 
 // Objeto de canvas para facilitar el uso de las funciones de canvas
+/*
+ * @typedef {Object} canvas
+ * @property {int} name - El nombre de la persona.
+ * @property {number} age - La edad de la persona.
+ * @property {string} gender - El género de la persona.
+ * @property {Array<string>} hobbies - Los pasatiempos de la persona.
+ */
 let canvas = {
 
     // Parametros de base de el canvas
