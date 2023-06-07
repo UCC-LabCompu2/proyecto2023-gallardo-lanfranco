@@ -108,10 +108,11 @@ let goto = function(url){
 // Objeto de canvas para facilitar el uso de las funciones de canvas
 /*
  * @typedef {Object} canvas
- * @property {int} name - El nombre de la persona.
- * @property {number} age - La edad de la persona.
- * @property {string} gender - El género de la persona.
- * @property {Array<string>} hobbies - Los pasatiempos de la persona.
+ * @property {number} width - El ancho del canvas.
+ * @property {number} height - La altura del canvas.
+ * @property {Object} artist - Instancia del objeto artist (libreria para canvas).
+ * @property {Array<HTMLImageElement>} images - El array donde se guardan las imagenes utilizadas por canvas.
+ * @property {Array<HTMLImageElement>} images - El array donde se guardan las imagenes que se mostraran.
  */
 let canvas = {
 
@@ -190,7 +191,6 @@ let canvas = {
     */
     draw: function(){
         this.artist.drawImage(this.images["fondoboost"], 0,0,canvas.width,canvas.height);
-        this.artist.drawImage("1", 50, 50, 0, 0);
         this.drawingImages.forEach((image, i) => {
             this.artist.drawImage(image, 50 + i * 200, this.height / 2 - image.height / 2, 200, 200);
         })
@@ -214,7 +214,7 @@ let canvas = {
 
 }
 
-// Agrega la funcion load del objeto que creamos a la ventana en la que estamos :D
+// Agrega la funcion load del objeto que creamos a la ventana en la que estamos
 window.addEventListener('load', function(){
     canvas.load();
 })
