@@ -24,13 +24,13 @@ let calcularPrecio = function(rangoInicial, rangoFinal, region){
 }
 
 /*
-* Es la funcion que tiene el boton Calcular Precio. Devuelve el precio y muestra el canvas.
+* Es la funcion que, al seleccionar rangos, calcula el precio y muestra el canvas.
 * En caso de un ingreso erroneo (rangoInicial>rangoFinal) se muestra un error.
-* @method onClick
+* @method mostrar
 * @param sin parametros
 * @return no retorna nada
 */
-let onClick = function(){
+let mostrar = function(){
     const rangoInicial = document.getElementById("rango").value;
     const rangoFinal = document.getElementById("rank").value;
     const region = document.getElementById("regionn").value;
@@ -68,9 +68,10 @@ let errorDeRango = function(){
 let validar = function(){
     const rangoInicial = document.getElementById("rango").value;
     const rangoFinal = document.getElementById("rank").value;
-    if(rangoInicial < rangoFinal){
+    if(rangoInicial < rangoFinal) {
         document.getElementById("rango").style.color = "black";
         document.getElementById("rank").style.color = "black";
+        mostrar();
     }
     else{
         errorDeRango();
@@ -87,21 +88,11 @@ let validar = function(){
 let pagar = function(){
     const precio = Number(document.getElementById("precio").text.split("$")[1]);
     if(precio){
-        goto("pagos.html");
+        alert("Muchas gracias!!! Nos comunicaremos con usted via e-mail");
     }
     else{
-        alert("Por favor apreta el boton de calcular precio");
+        alert("Por favor presione el boton de calcular precio");
     }
-}
-
-/*
-* Sirve para redirigir el navegador a una URL especifica
-* @method Nombre de la función
-* @param {void} url - representa la direccion web a la que se desea ir
-* @return no retorna nada
-*/
-let goto = function(url){
-    document.location = url;
 }
 
 
