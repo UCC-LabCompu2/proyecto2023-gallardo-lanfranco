@@ -87,21 +87,11 @@ let validar = function(){
 let pagar = function(){
     const precio = Number(document.getElementById("precio").text.split("$")[1]);
     if(precio){
-        goto("pagos.html");
+        alert("Muchas gracias!!! Nos comunicaremos con usted via e-mail");
     }
     else{
-        alert("Por favor apreta el boton de calcular precio");
+        alert("Por favor presione el boton de calcular precio");
     }
-}
-
-/*
-* Sirve para redirigir el navegador a una URL especifica
-* @method Nombre de la función
-* @param {void} url - representa la direccion web a la que se desea ir
-* @return no retorna nada
-*/
-let goto = function(url){
-    document.location = url;
 }
 
 

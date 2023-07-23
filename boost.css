@@ -35,10 +35,8 @@ body {
     background-image: url('Imagenes/ashe.jpg');
     background-size: cover;
     background-position: center 1px;
-
 }
 nav {
-
     color: white;
     display: flex;
     justify-content: space-between;
@@ -53,8 +51,22 @@ nav a {
     font-weight: bold;
     margin-top: -50px;
 }
-section {
+nav img {
+    height: 150px;
+    margin-left: -30px;
+    margin-top: -50px;
 
+}
+nav h1:nth-child(2) {
+    color: goldenrod;
+    margin-top: -30px;
+    font-size: 4rem;
+    margin-left: -150px;
+    font-family:"Friz Quadrata Std";
+    text-shadow: 1px 1px 0px #000000;
+
+}
+section {
     padding: 2rem;
     margin: 2rem;
     border-radius: 5px;
@@ -62,8 +74,9 @@ section {
 }
 button {
     padding: 1rem;
-    background-color: #333;
+    background-color: goldenrod;
     color: white;
+    border: none;
     border-radius: 5px;
     font-size: 1.2rem;
     cursor: pointer;
