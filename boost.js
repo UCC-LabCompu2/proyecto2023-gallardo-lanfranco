@@ -24,13 +24,13 @@ let calcularPrecio = function(rangoInicial, rangoFinal, region){
 }
 
 /*
-* Es la funcion que tiene el boton Calcular Precio. Devuelve el precio y muestra el canvas.
+* Es la funcion que, al seleccionar rangos, calcula el precio y muestra el canvas.
 * En caso de un ingreso erroneo (rangoInicial>rangoFinal) se muestra un error.
-* @method onClick
+* @method mostrar
 * @param sin parametros
 * @return no retorna nada
 */
-let onClick = function(){
+let mostrar = function(){
     const rangoInicial = document.getElementById("rango").value;
     const rangoFinal = document.getElementById("rank").value;
     const region = document.getElementById("regionn").value;
@@ -68,9 +68,10 @@ let errorDeRango = function(){
 let validar = function(){
     const rangoInicial = document.getElementById("rango").value;
     const rangoFinal = document.getElementById("rank").value;
-    if(rangoInicial < rangoFinal){
+    if(rangoInicial < rangoFinal) {
         document.getElementById("rango").style.color = "black";
         document.getElementById("rank").style.color = "black";
+        mostrar();
     }
     else{
         errorDeRango();

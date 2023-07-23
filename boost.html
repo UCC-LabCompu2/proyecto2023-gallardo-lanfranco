@@ -8,10 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Compra Boost - Rangos</title>
 </head>
-<body>
+<body class="bgAshe">
 <header>
     <nav>
-        <h1>
+        <h1 class="azulh1">
             <a href="index.html"><img src="Imagenes/logo.png" alt="FastElo Logo"></a>
         </h1>
         <h1> FastElo
@@ -61,7 +61,7 @@
             <h2>Region</h2>
             <h3>Seleciona tu region</h3>
             <label for="regionn">Selecciona tu región:</label>
-            <select id="regionn" name="region">
+            <select id="regionn" name="region" onchange="mostrar()">
                 <option value="LAS" selected>Las</option>
                 <option value="LAN">Lan</option>
                 <option value="BR">Br</option>
@@ -80,7 +80,6 @@
         </div>
     </section>
 
-    <button class="boton-continuar" onclick="onClick()">Calcular Precio</button>
     <div id="canvas-container">
         <canvas id="my-canvas"></canvas>
     </div>

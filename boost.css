@@ -1,12 +1,14 @@
 
 nav h1:nth-child(2) {
-    color: lightblue;
+    color: goldenrod;
     margin-top: -30px;
     font-size: 4rem;
     margin-left: -150px;
     font-family:"Friz Quadrata Std";
     text-shadow: 1px 1px 0px #000000;
-
+}
+.azulh1{
+    color: lightblue;
 }
 nav img {
     height: 150px;
@@ -19,7 +21,6 @@ nav img {
     background-color: cadetblue;
     border: none;
     color: lightblue;
-
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
@@ -30,11 +31,29 @@ nav img {
     border-radius: 5px;
     font-family: "Friz Quadrata";
 }
-
+.boton-boost {
+    background-color: goldenrod;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
 body {
-    background-image: url('Imagenes/ashe.jpg');
+    background-image: url('Imagenes/fondo.png');
     background-size: cover;
     background-position: center 1px;
+}
+.bgAshe{
+    background-image: url('Imagenes/ashe.jpg');
+}
+.bgTeemo{
+    background-image: url('Imagenes/600528.png');
 }
 nav {
     color: white;
@@ -71,6 +90,18 @@ section {
     margin: 2rem;
     border-radius: 5px;
     text-align: center;
+}
+.sectionSombra {
+    background-color: rgba(0, 0, 0, 0.671);
+    -webkit-text-stroke: 0.5px goldenrod;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.sectionIndex{
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
 }
 button {
     padding: 1rem;
@@ -158,6 +189,9 @@ input[type=checkbox] {
     object-position: center;
 
 }
+img {
+    margin-right: 0;
+}
 #bajo{
     transform: scale(1.5);
     height: 50px;
@@ -193,4 +227,7 @@ input[type=checkbox] {
 }
 .panel button:hover {
     background-color: cadetblue;
+}
+h1:nth-child(2) {
+    margin-left: 0;
 }
